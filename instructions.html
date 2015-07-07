@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Instructions</title>
+</head>
+<body>
+	<div>
+		<p>
+			rails new appBlog</p>
+		<p>
+			rails s | CTRL+C</p>
+		<p>
+			rails generate controller welcome index</p>
+		<p>     
+			 create  app/controllers/welcome_controller.rb
+		     route  get 'welcome/index'
+		     invoke  erb
+		     create    app/views/welcome
+		     create    app/views/welcome/index.html.erb
+		     invoke  test_unit
+		     create    test/controllers/welcome_controller_test.rb
+		     invoke  helper
+		     create    app/helpers/welcome_helper.rb
+		     invoke    test_unit
+		     invoke  assets
+		     invoke    coffee
+		     create      app/assets/javascripts/welcome.coffee
+		     invoke    scss
+		     create      app/assets/stylesheets/welcome.scss</p>
+		<p>
+			Ver config-->routes.erb
+			**Aqui configuramos las rutas de la app**</p>
+		<p>
+			En las vistas la extension .erb hace referencia que podemos utilizar codigo ruby dentro de las etiquetas html</p>
+		<p>
+			[1,2,3,4,5].each do |number| numero:<%=number%></p>
+		<p>
+			AL abrir el codigo fuente de nuestra pagina en el navegador veremos que ruby le pone un timestamp a los assets para que carguen de manera mas rapida.</p>
+		<p>
+			rails generate model Article title body:text visits_count:integer 
+
+			**Convencion: nombre del modelo debe ser en singular y en ingles**
+			**Convencion: el nombre de las tablas de la BD sera el plural del modelo y en ingles**
+			**si no se especifica el tipo de dato, rails lo interpreta como string**</p>
+		<p>   
+			   invoke  		active_record
+			   create    	db/migrate/20150706191459_create_articles.rb
+			   create    	app/models/article.rb
+			   invoke    	test_unit
+			   create      	test/models/article_test.rb
+			   create      	test/fixtures/articles.yml</p>
+		<p>
+			rake db:migrate
+			**ejecuta las migraciones**
+			**actualiza la bd y ejecuta el metodo change de la migracion creada**
+			**Crea la tabla articles y sus campos**</p>
+		<p>
+			rails console | Article.all | Article.find(blahblah)
+			**usar estos comandos para interactuar con la bd**</p>
+		<p>
+			gem install boostrap-sass -v '3.3.5.1'
+		</p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+	</div>
+</body>
+</html>

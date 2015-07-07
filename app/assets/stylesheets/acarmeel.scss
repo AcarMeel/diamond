@@ -1,0 +1,61 @@
+    @import "bootstrap";
+    .field_with_errors {
+        @extend .has-error;
+    }
+    
+    .alert-notice {
+        @extend .alert-info;
+    }
+    
+    .alert-alert {
+        @extend .alert-danger;
+    }
+    
+    body {
+        font-family: 'Andika', sans-serif;
+        padding-top: 70px;
+    }
+    
+    .blur {
+        min-height: inherit;
+        background-color: rgba(0, 0, 0, .3) !important;
+    }
+    
+    .jumbotron {
+        background-image: url('jumbotrondark.png');
+        color: white;
+        -webkit-filter: grayscale(65%);
+        -moz-filter: grayscale(65%);
+        -o-filter: grayscale(65%);
+        -ms-filter: grayscale(65%);
+        filter: grayscale(65%);
+    }
+    /*---------COLOR-----------*/
+    
+    .sky-color {
+        color: #3B9DF3;
+    }
+    /*------------NAVEGACION----------*/
+    
+    .navcolor {
+        background-color: #420E5E;
+    }
+    /*-------------FUENTES-----------*/
+    
+    .andika-font {
+        font-family: 'Andika', sans-serif;
+    }
+    
+    .neucha-font {
+        font-family: 'Neucha', cursive;
+    }
+    
+    .OS-font {
+        font-family: 'Oleo Script', cursive;
+        font-size: 1.5em;
+    }
+    
+    .pacifico-font {
+        font-family: 'Pacifico', cursive;
+        font-size: 2em;
+    }

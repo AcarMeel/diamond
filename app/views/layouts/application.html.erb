@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>AppBlog</title>
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+  	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
+ 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top navcolor">
+			<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand pacifico-font" href="#">Diamond'sBlog</a>
+			    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			       <ul class="nav navbar-nav OS-font">
+				        <li class="active"><%= link_to "Home",root_path %> 
+				        	<span class="sr-only">(current)</span>
+				        </li>
+				        <li><%= link_to "Design",root_path %></li>
+				        <li><%= link_to "Programming",root_path %></li>
+				        <li><%= link_to "Technology",root_path %></li>
+			        </ul>
+			    </div>
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid">
+		<%= yield %>
+	</div>
+
+
+</body>
+</html>
